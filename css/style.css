@@ -1,0 +1,57 @@
+#bulleCoupeG{
+    display:none;
+}
+#bulleCoupeD{
+    
+  display:none;
+}
+
+
+
+
+
+@keyframes coupeGAnimation{
+
+  0%   { transform: rotate(0deg); }
+ 25% { transform: rotate(25deg); }
+ 50% { transform: rotate(45deg); }
+ 100% { transform: rotate(0deg); }
+    
+}
+@keyframes coupeDAnimation{
+
+  0%   { transform: rotate(0deg); }
+ 25% { transform: rotate(-25deg); }
+ 50% { transform: rotate(-45deg); }
+ 100% { transform: rotate(0deg); }
+    
+}
+
+@keyframes bublle{
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+#coupeG {
+transform-origin: 50% 50%;  
+-webkit-animation: coupeGAnimation  5s ; /* Safari 4+ */
+  -moz-animation:   coupeGAnimation  5s ; /* Fx 5+ */
+  -o-animation:     coupeGAnimation 5s ; /* Opera 12+ */
+  animation:         coupeGAnimation  5s ; /* IE 10+, Fx 29+ */
+}
+#coupeD {
+transform-origin: 50% 50%;  
+-webkit-animation: coupeDAnimation  5s ; /* Safari 4+ */
+  -moz-animation:   coupeDAnimation  5s ; /* Fx 5+ */
+  -o-animation:     coupeDAnimation 5s; /* Opera 12+ */
+  animation:         coupeDAnimation  5s ; /* IE 10+, Fx 29+ */
+}
+
+.bubblehide {
+  -webkit-animation: bublle 5s; /* Safari 4+ */
+  -moz-animation:   bublle 5s ; /* Fx 5+ */
+  -o-animation:      bublle 5s ; /* Opera 12+ */
+  animation:         bublle 5s ; /* IE 10+, Fx 29+ */
+  
+}
